@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+    
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body class="container-fluid">
+
+
+
+    <div>
+        <div class="navbar">
+            <div class="navbar-brand"><a class="name" href="/">CHLOE WIESER</a> </div>
+            <div>
+                <a class="menu-options" href="/forum">Contact</a>
+                <!-- <a href="/cds">Albums</a> -->
+                <a class="menu-options" href="/albums/0">About Me</a>
+                <a class="menu-options selected" href="/">Portfolio</a>
+            </div>
+        </div>
+
+    </div>    
+
+    <main>
+        <h1>Welcome to my portfolio!</h1>
+        <h5>Click on the projects below for details and links</h2>
+
+        <div class="projectCards row row-cols-1 row-cols-md-1 g-4">
+            <div class="col">
+                <div class="card">
+                <img src="images/RecipeBoxSelections.png" class="card-img-top" alt="..."> 
+                <a href="https://recipeboxfend.netlify.app/" target="_blank" class="projectTitle">Recipe Box</a>
+                <p>Recipe Box is an app for selecting recipes and automatically combining ingredients into one shopping list.</p>
+
+
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    View details >
+                </button>
+
+                  <div class="card collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p class="card-text">Recipe Box was built with HTML, CSS, CSS FlexBox, Bootstrap, JavaScript, AJAX and 2 APIs. My primary responsibility was building a responsive page layout, ensuring a great user experience across all devices.</p>
+                        <img src="images/recipeBoxPhone.png" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectCards row row-cols-1 row-cols-md-1 g-4">
+            <div class="col">
+                <div class="card">
+                <img src="images/HabitCityMacbook.png" class="card-img-top" alt="..."> 
+                <a href="https://recipeboxfend.netlify.app/" target="_blank" class="projectTitle">Habit City</a>
+                <p>Habit City is a habit tracking app that helps users to build healthier routines.</p>
+
+
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    View details >
+                </button>
+
+                  <div class="card collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p class="card-text">Habit City was built with HTML, CSS, JavaScript, Node JS, Express and PostgreSQL. My responsibilities included building a mobile-responsive list page layout and routing information between the app and a PostgreSQL database.</p>
+                        <img src="images/habitCityPhone.png" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+
+
+</html>

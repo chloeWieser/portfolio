@@ -1,0 +1,142 @@
+.container-fluid{
+    color: white;
+    margin: 0px;
+    background-color: black;
+}
+
+a{
+    color: white
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  /* Links inside the navbar */
+  .menu-options {
+    float: right;
+    display: flex;
+    color: #f2f2f2;
+    /* text-align: center;
+    align-items: flex-end; */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Poppins',sans-serif;
+    font-size: 20px;
+    font: weight 400px;;
+  }
+
+  .navbar-brand {
+    display: flex;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight:normal;
+  }
+
+  .name {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight:50;
+    font-family:'Poppins', sans-serif;
+    color: white;
+  }
+
+ H1 {
+    font-size: 40px;
+    font-weight:50;
+    font-family:'Poppins', sans-serif;
+    margin: 0px;
+  }
+
+  H5 {
+    font-size: 18px;
+    font-weight:bold;
+    font-family:'Poppins', sans-serif;
+    margin: 0px;
+  }
+  
+  /* Change color on mouse-over */
+  .menu-options:hover {
+    color: rgb(161, 161, 161);
+  }
+
+  /* Change color on active*/
+  .menu-options:active {
+    color: rgb(161, 161, 161);
+  }
+
+  .menu-options.selected {
+    color: rgb(161, 161, 161);
+  }
+  
+  /* Main content */
+  main {
+    margin-top: 100px; /* Add a top margin to avoid content overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .projectCards{
+    width: 980px;
+    padding: 36px;
+    color: black;
+  }
+
+  .card{
+      margin-bottom: 48px;
+  }
+
+  .card-title{
+      font-family: 'Poppins', sans-serif;
+      margin-top: 16px;
+  }
+
+  .projectTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .btn-outline-secondary{
+    display:flex;
+    justify-content:center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800px;
+    margin: 36px auto;
+    width: 200px;
+    outline: none;
+  }
+
+  .btn-outline-secondary:hover{
+    text-decoration: underline;
+  }
+
+  p{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400px;
+    margin: 0px auto;
+    margin-top: 8px;
+    width: 640px;
+  }
+
+
+
