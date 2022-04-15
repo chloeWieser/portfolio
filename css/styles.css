@@ -13,6 +13,7 @@ background-color: black;
 }
 
 #aboutMe{
+width:100vw;
 background-color: black;
 }
 
@@ -21,6 +22,7 @@ width:100vw;
 background-color: black;
 text-align: center;
 color: white;
+margin-bottom: 48px;
 }
 
 /* The navigation bar */
@@ -35,6 +37,7 @@ display: flex;
 flex-direction: row-reverse;
 width: 100%;
 justify-content: flex-end;
+margin-right: 24px;
 }
 
 .text-accent{
@@ -147,7 +150,10 @@ justify-content: flex-end;
 
 /* about section image css */
 .about-me-section {
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .imageAboutPage {
@@ -155,7 +161,7 @@ width: 200px;
 border-radius: 2em;
 }
 
-.aboutMe{
+.text{
 text-align: left;
 font-family: 'Poppins', sans-serif;
 font-weight:400px;
@@ -167,7 +173,6 @@ color: white;
 text-align: center;
 font-family: 'Poppins', sans-serif;
 font-weight:400px;
-margin-top: 24px;
 color: white;
 }
 
@@ -188,23 +193,34 @@ color: rgb(161, 161, 161)
 }
 
 @media only screen and (max-width: 480px){
-  
+.navbar-nav{
+  margin-right: 0px;
+}
+
 .name{
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .headings {
   font-size: 32px;
-  margin: 48px auto 32px auto;
+  margin: 48px;
   text-align: center;
 }
 
 .subHeadings {
   text-align: center;
+  margin: 48px;
 }
 
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
 .about{
-  width:80vw;
+  width:60vw;
 }
 
 .imageAboutPage {
@@ -219,48 +235,164 @@ color: rgb(161, 161, 161)
   background-color: black;
 }
 
-.card{
-  width: 360px;
-}
+.cardContainer{
+  padding: 0px;
+} 
 
 .projectSummary{
-  width: 320px;
+  width: 80vw;
 }
 
 }
 
-
-
-@media only screen (min-width: 481px) and (max-width: 920px){
+@media screen and (min-device-width: 481px) and (max-device-width: 540px){
+  .navbar-nav{
+    margin-right: 0px;
+  }
   
-.name{
-  font-size: 24px;
-}
+  .name{
+    font-size: 18px;
+  }
+  
+  .headings {
+    font-size: 32px;
+    margin: 48px;
+    text-align: center;
+  }
+  
+  .subHeadings {
+    text-align: center;
+    margin: 48px;
+  }
+  
+  .about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+  
+  .about{
+    width:50vw;
+  }
+  
+  .imageAboutPage {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+  }
+  
+  .background{
+    background-color: black;
+  }
+  
+  .cardContainer{
+    padding: 0px;
+  } 
+  
+  .projectSummary{
+    width: 80vw;
+  }
+  
+  }
 
-.headings {
-  font-size: 32px;
-  margin: 0px auto;
-  text-align: center;
-}
+@media screen and (min-device-width: 541px) and (max-device-width: 980px){
 
-.about-me-section {
-  display: flex;
-  flex-wrap: nowrap;
-}
+  .name {
+    font-size: 24px;
+  }
+  
+  .headings {
+    font-size: 32px;
+    margin: 48px;
+    text-align: center;
+  }
+  
+  .about-me-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .about{
+    width:60vw;
+  }
+  
+  .imageAboutPage {
+    width: 100%;
+  }
+  
+  .text{
+    margin-top: 0px;
+    }
+  
+  .subHeadings {
+    text-align: center;
+  }
+  
+  .cardContainer{
+    display:flex;
+    flex-direction: column;
+    padding: 48px;
+  }
+  
+  .card{
+    width: 600px;
+  }
+  
+  .projectSummary{
+    width: 560px;
+  }
+  }
 
-.subHeadings {
-  text-align: center;
-}
+  @media screen and (min-device-width: 981px) and (max-device-width: 1280px){
 
-.about{
-  margin: 0 auto;
-}
-
-.card{
-  width: 600px;
-}
-
-.projectSummary{
-  width: 560px;
-}
-
+    .name {
+      font-size: 24px;
+    }
+    
+    .headings {
+      font-size: 32px;
+      margin: 48px;
+      text-align: center;
+    }
+    
+    .about-me-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .about{
+      width:60vw;
+    }
+    
+    .imageAboutPage {
+      width: 100%;
+    }
+    
+    .text{
+      margin-top: 0px;
+      width: 50vw;
+      }
+    
+    .subHeadings {
+      text-align: center;
+    }
+    
+    .cardContainer{
+      display:flex;
+      flex-direction: row;
+      padding: 48px;
+    }
+    
+    .card{
+      width: 450px;
+    }
+    
+    .projectSummary{
+      width: 350px;
+    }
+    }
