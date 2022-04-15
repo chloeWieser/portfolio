@@ -1,91 +1,56 @@
-.container-fluid{
-    background-color: black;
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 100%;
+/* Main content */
+main {
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
-html {
-  height: 100%;
-  min-height: 100%;
+#projects{
+width:100vw;
+background-color: black;
 }
 
-body{
-  background-color: black;
-  color: white;
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-  min-height: 100%;
+#aboutMe{
+background-color: black;
 }
 
-.link{
-    color: white
+#contact{
+width:100vw;
+background-color: black;
+text-align: center;
+color: white;
 }
 
 /* The navigation bar */
 .navbar { 
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-
-.navbar-nav{
-  color: white;
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  justify-content: flex-end;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
-  .text-accent{
-    color: rgb(161, 161, 161)
-  }
-  
-  /* Links inside the navbar */
-  .nav-link {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family:'Poppins',sans-serif;
-    font-size: 20px;
-    font-weight: 400px;
-  }
+.navbar-nav{
+color: white;
+display: flex;
+flex-direction: row-reverse;
+width: 100%;
+justify-content: flex-end;
+}
 
-  .navbar-brand {
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight:normal;
-  }
+.text-accent{
+  color: rgb(161, 161, 161)
+}
 
-  .name:hover {
-    color: rgb(161, 161, 161);
-  }
+/* Links inside the navbar */
+.nav-link {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Poppins',sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+}
 
-  .name {
-    text-decoration: none;
-    font-size: 36px;
-    font-weight:50;
-    font-family:'Poppins', sans-serif;
-    color: white;
-  }
-
-.headings {
-    font-size: 40px;
-    font-weight:50;
-    font-family:'Poppins', sans-serif;
-    margin: 80px auto 0px auto;
-  }
-
-.subHeadings {
-    font-size: 16px;
-    font-weight:400;
-    font-family:'Poppins', sans-serif;
-    margin-top: 16px;
-  }
-  
   /* Change color on mouse-over */
   .nav-link:hover {
     color: rgb(161, 161, 161);
@@ -99,189 +64,203 @@ body{
   .nav-link.selected {
     color: rgb(161, 161, 161);
   }
-  
-  /* Main content */
-  main {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 48px;
-    padding: 0px;
-  }
 
-  .card{
-      margin-bottom: 48px;
-  }
-
-  .card-title{
-      font-family: 'Poppins', sans-serif;
-      margin-top: 16px;
-  }
-
-  .projectTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    margin-bottom: 16px;
-  }
-
-  .btn-outline-light{
-    display:flex;
-    justify-content:center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800px;
-    margin: 36px auto;
-    width: 200px;
-    outline: none;
-  }
-
-  .btn-outline-light:hover{
-    text-decoration: underline;
-  }
-
-  .projectSummary{
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight:400px;
-    margin: 0px auto;
-    margin-top: 8px;
-    width: 640px;
-    color: white;
-  }
-
-  .cardContainer{
-    padding: 48px;
-  }
-
-/* about section image css */
-.imageAboutPage {
-  width: 80%;
-  border-radius: 2em;
+.navbar-brand {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight:normal;
 }
 
-.aboutMe{
+.name:hover {
+  color: rgb(161, 161, 161);
+}
+
+.name {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight:50;
+  font-family:'Poppins', sans-serif;
+  color: white;
+}
+
+.headings {
+  font-size: 40px;
+  font-weight:50;
+  font-family:'Poppins', sans-serif;
+  margin-bottom: 40px;
+}
+
+.subHeadings {
+  font-size: 16px;
+  font-weight:400;
+  font-family:'Poppins', sans-serif;
+}
+
+
+.card{
+    margin-bottom: 48px;
+}
+
+.card-title{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 16px;
+}
+
+.projectTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.btn-outline-light{
+  display:flex;
+  justify-content:center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800px;
+  margin: 36px auto;
+  width: 200px;
+  outline: none;
+}
+
+.btn-outline-light:hover{
+  text-decoration: underline;
+}
+
+.projectSummary{
   text-align: left;
   font-family: 'Poppins', sans-serif;
   font-weight:400px;
+  margin: 0px auto;
   margin-top: 8px;
+  width: 640px;
   color: white;
+}
+
+.cardContainer{
+  padding: 48px;
+}
+
+/* about section image css */
+.about-me-section {
+justify-content: center;
+}
+
+.imageAboutPage {
+width: 200px;
+border-radius: 2em;
+}
+
+.aboutMe{
+text-align: left;
+font-family: 'Poppins', sans-serif;
+font-weight:400px;
+margin-top: 8px;
+color: white;
 }
 
 .contact{
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight:400px;
-  margin-top: 24px;
-  color: white;
-}
-
-#contact{
-  text-align: center;
-  color: white;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-weight:400px;
+margin-top: 24px;
+color: white;
 }
 
 .button-link{
-  margin-top: 48px;
+margin-top: 48px;
 }
 
 .socialLinks{
-  margin: 16px;
+margin: 16px;
 }
 
 .fa-brands:hover{
-  color: rgb(161, 161, 161)
+color: rgb(161, 161, 161)
 }
 
 .fa-brands:active{
-  color: rgb(161, 161, 161)
+color: rgb(161, 161, 161)
 }
 
 @media only screen and (max-width: 480px){
-    
-  .name{
-    font-size: 24px;
-  }
-
-  .headings {
-    font-size: 32px;
-    margin: 48px auto 32px auto;
-    text-align: center;
-  }
-
-  .subHeadings {
-    text-align: center;
-  }
-
-  .about{
-    width:80vw;
-  }
   
-  .imageAboutPage {
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2em;
-  }
+.name{
+  font-size: 24px;
+}
 
-  .background{
-    background-color: black;
-  }
+.headings {
+  font-size: 32px;
+  margin: 48px auto 32px auto;
+  text-align: center;
+}
 
-  .card{
-    width: 360px;
-  }
+.subHeadings {
+  text-align: center;
+}
 
-  .projectSummary{
-    width: 320px;
-  }
+.about{
+  width:80vw;
+}
+
+.imageAboutPage {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+}
+
+.background{
+  background-color: black;
+}
+
+.card{
+  width: 360px;
+}
+
+.projectSummary{
+  width: 320px;
+}
 
 }
 
 
 
 @media only screen (min-width: 481px) and (max-width: 920px){
-    
-  .name{
-    font-size: 24px;
-  }
-
-  .headings {
-    font-size: 32px;
-    /* margin: 0px auto; */
-    text-align: center;
-  }
   
-  .container .about-me-section {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .subHeadings {
-    text-align: center;
-  }
-
-  .about{
-    margin: 0 auto;
-  }
-
-  .background{
-    background-color: black;
-  }
-
-  .card{
-    width: 600px;
-  }
-
-  .projectSummary{
-    width: 560px;
-  }
-
-  .aboutText {
-    width: 70%;
-  }
+.name{
+  font-size: 24px;
 }
+
+.headings {
+  font-size: 32px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.about-me-section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.subHeadings {
+  text-align: center;
+}
+
+.about{
+  margin: 0 auto;
+}
+
+.card{
+  width: 600px;
+}
+
+.projectSummary{
+  width: 560px;
+}
+
