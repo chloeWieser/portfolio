@@ -18,71 +18,116 @@
 </head>
 
 
-<body class="container-fluid">
+<body class="background" >
+    <div class="container-fluid p-0">
 
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <div class="navbar-brand"><a class="name" href="./">CHLOE WIESER</a> </div>
+                <button class="navbar-toggler navbar-dark bg-accent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link selected link-light" href="./">Portfolio</a>
+                        <a class="nav-link link-light" href="./aboutMe.html">About Me</a>
+                        <a class="nav-link link-light" href="./contact.html">Contact</a>
 
-
-    <div>
-        <div class="navbar">
-            <div class="navbar-brand"><a class="name" href="/">CHLOE WIESER</a> </div>
-            <div>
-                <a class="menu-options" href="/forum">Contact</a>
-                <!-- <a href="/cds">Albums</a> -->
-                <a class="menu-options" href="/albums/0">About Me</a>
-                <a class="menu-options selected" href="/">Portfolio</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
 
-    </div>    
+    
 
     <main>
-        <h1>Welcome to my portfolio!</h1>
-        <h5>Click on the projects below for details and links</h2>
+        <h1 class="headings">Welcome to my portfolio!</h1>
+        <h5 class="subHeadings">Click on 'View Details' to see more information about each project</h2>
 
-        <div class="projectCards row row-cols-1 row-cols-md-1 g-4">
+        <div class="cardContainer row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card">
-                <img src="images/RecipeBoxSelections.png" class="card-img-top" alt="..."> 
+                <div class="card bg-dark">
+                <img src="images/Recipe Box Grey 16.png" class="card-img-top" alt="..."> 
                 <a href="https://recipeboxfend.netlify.app/" target="_blank" class="projectTitle">Recipe Box</a>
-                <p>Recipe Box is an app for selecting recipes and automatically combining ingredients into one shopping list.</p>
+                <p class="projectSummary">Recipe Box is an app for selecting recipes and automatically combining ingredients into one shopping list.</p>
 
 
-                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#recipeBoxCollapse" aria-expanded="false" aria-controls="recipeBoxCollapse">
-                    View details >
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#recipeBoxCollapse" aria-expanded="false" aria-controls="recipeBoxCollapse">
+                    View details
                 </button>
 
-                  <div class="card collapse" id="recipeBoxCollapse">
-                    <div class="card card-body">
-                        <p class="card-text">Recipe Box was built with HTML, CSS, CSS FlexBox, Bootstrap, JavaScript, AJAX and 2 APIs. My primary responsibility was building a responsive page layout, ensuring a great user experience across all devices.</p>
-                        <img src="images/recipeBoxPhone.png" alt="...">
+                  <div class="bg-dark card collapse" id="recipeBoxCollapse">
+                    <div class="bg-dark card card-body">
+                        <p class="projectSummary card-text">Recipe Box utilizes a recipe database API and a RESTful API that parses ingredients lists so they can be collated onto a grocery list. This is a front-end application and was built with:</p>
+                        <ul class="projectSummary card-text">
+                            <li>HTML</li>
+                            <li>CSS & CSS FlexBox</li>
+                            <li>JavaScript</li>
+                            <li>AJAX</li>
+                            <li>2 APIs</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <p class="projectSummary card-text">My primary responsibility was building a responsive page layout, ensuring a great user experience across all devices.</p>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
 
-        <div class="projectCards row row-cols-1 row-cols-md-1 g-4">
             <div class="col">
-                <div class="card">
-                <img src="images/HabitCityMacbook.png" class="card-img-top" alt="..."> 
+                <div class="bg-dark card">
+                <img src="images/Habit City Grey 16.png" class="card-img-top" alt="..."> 
                 <a href="https://recipeboxfend.netlify.app/" target="_blank" class="projectTitle">Habit City</a>
-                <p>Habit City is a habit tracking app that helps users to build healthier routines.</p>
+                <p class="projectSummary">Habit City is a habit tracking app that helps users to build healthier routines by logging their progress.</p>
 
 
-                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#habitCityCollapse" aria-expanded="false" aria-controls="habitCityCollapse">
-                    View details >
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#habitCityCollapse" aria-expanded="false" aria-controls="habitCityCollapse">
+                    View details
                 </button>
 
-                  <div class="card collapse" id="habitCityCollapse">
-                    <div class="card card-body">
-                        <p class="card-text">Habit City was built with HTML, CSS, JavaScript, Node JS, Express and PostgreSQL. My responsibilities included building a mobile-responsive list page layout and routing information between the app and a PostgreSQL database.</p>
-                        <img src="images/habitCityPhone.png" alt="...">
+                  <div class="bg-dark card collapse" id="habitCityCollapse">
+                    <div class="bg-dark card card-body">
+                        <p class="projectSummary card-text">Habit City utilizes 3 databases, one for user information, one for users entered habits and finally one for comments. CRUD operations were used for adding, editing and deleting input on the Habits Board and Manage Habits Board. This is a full-stack application and was built with:</p>
+                        <ul class="projectSummary card-text">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node JS</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <p class="projectSummary card-text">My responsibilities included building a mobile-responsive list page layout and routing information between the app and a PostgreSQL database.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center headings">About Me</h1>
+            <div class="about-me-section row mt-4">
+                <div class="about col-lg-3 col-md-3">
+                    <img src="images/Chloe Wieser photo.jpeg" class= "imageAboutPage" alt="">
+                </div>
+    
+                <div class="aboutText col-sm-12 col-lg-9">
+                    <p class="aboutMe"> Hello, I'm Chloe. I am a designer turned developer, originally from the UK and currently living in Atlanta GA. After 12 years of experience in fashion design and 1 year in UX design, I have refined my process of bringing a creative vision to life, while holding myself accountable for delivering all product requirements. I have always loved making things, learning how things work and designing solutions, which is what lead me to explore web development.</p>
+                        
+                    <p class="aboutMe"> I love the challenge of problem solving to balance business and user needs. I have made a career out of this previously in the fashion industry and more recently in the software design and development. </p>
+                    
+                </div>
+                </div>
+            </div>
+    
+    
+    
+        </main>
+
 
 
     </main>
+</div>
 
 </body>
 
